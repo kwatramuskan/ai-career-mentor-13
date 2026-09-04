@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Career Mentor</title>
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div class="orb orb1"></div><div class="orb orb2"></div>
+<div id="toast"></div>
+
+<section id="authView" class="auth-shell">
+  <div class="brand"><span class="logo">M</span><span>AI CAREER MENTOR</span></div>
+  <div class="auth-grid">
+    <div class="hero-copy">
+      <div class="eyebrow">YOUR PERSONAL CAREER CO-PILOT</div>
+      <h1>Your career<br><span>shouldn't be a guess.</span></h1>
+      <p>Tell us your interests, skills, goals and current stage. Get a personalized career graph, roadmap, skill gaps and opportunity matches.</p>
+      <div class="mini-flow"><b>INTERESTS</b><i>→</i><b>AI ANALYSIS</b><i>→</i><b>CAREER PATH</b></div>
+    </div>
+    <div class="auth-card">
+      <div class="tabs"><button class="tab active" data-tab="login">Login</button><button class="tab" data-tab="signup">Sign up</button></div>
+      <form id="loginForm">
+        <label>Email<input name="email" type="email" placeholder="you@example.com" required></label>
+        <label>Password<input name="password" type="password" placeholder="••••••••" required></label>
+        <button class="primary">Enter Mentor <span>→</span></button>
+      </form>
+      <form id="signupForm" class="hidden">
+        <label>Full name<input name="name" placeholder="Your name" required></label>
+        <label>Email<input name="email" type="email" placeholder="you@example.com" required></label>
+        <label>Password<input name="password" type="password" minlength="6" placeholder="Minimum 6 characters" required></label>
+        <button class="primary">Create account <span>→</span></button>
+      </form>
+      <p class="muted small">Demo data is stored locally in the project.</p>
+    </div>
+  </div>
+</section>
+
+<section id="appView" class="app-shell hidden">
+  <aside class="sidebar">
+    <div class="brand"><span class="logo">M</span><span>AI CAREER<br>MENTOR</span></div>
+    <nav>
+      <button data-page="dashboard" class="nav active">◈ Dashboard</button>
+      <button data-page="profile" class="nav">◉ My Profile</button>
+      <button data-page="career" class="nav">✦ Career Graph</button>
+      <button data-page="roadmap" class="nav">↗ Roadmap</button>
+      <button data-page="jobs" class="nav">▣ Opportunities</button>
+      <button data-page="interview" class="nav">◌ AI Interview</button>
+      <button data-page="resume" class="nav">▤ Resume & Gaps</button>
+      <button data-page="progress" class="nav">↗ Study Progress</button>
+    </nav>
+    <div class="side-bottom"><div class="status-dot"></div><span>AI engine online</span><button id="logout">Logout</button></div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div><span class="eyebrow">PERSONALIZED CAREER SYSTEM</span><h2 id="pageTitle">Dashboard</h2></div>
+      <div class="user-chip"><span id="avatar">U</span><span id="userName">User</span></div>
+    </header>
+
+    <div id="page-dashboard" class="page">
+      <div class="welcome-card">
+        <div><span class="eyebrow">WELCOME BACK</span><h1 id="welcome">Let's build your next step.</h1><p id="profileState">Complete your profile to unlock your personalized career graph.</p></div>
+        <button class="primary" id="startProfile">Update Profile →</button>
+      </div>
+      <div class="stats">
+        <div class="stat"><span>TOP CAREER MATCH</span><strong id="topCareer">—</strong><small id="topScore">Run analysis</small></div>
+        <div class="stat"><span>SKILL GAPS</span><strong id="gapCount">—</strong><small>priority areas</small></div>
+        <div class="stat"><span>ROADMAP</span><strong id="roadCount">—</strong><small>steps generated</small></div>
+        <div class="stat"><span>OPPORTUNITIES</span><strong>6</strong><small>demo matches</small></div>
+      </div>
+      <div class="two-col">
+        <div class="panel"><div class="panel-head"><h3>Career matches</h3><span>AI ranked</span></div><div id="matchList" class="match-list"></div></div>
+        <div class="panel"><div class="panel-head"><h3>Recommended projects</h3><span>Build → prove</span></div><div id="projectList" class="project-list"></div></div>
+      </div>
+    </div>
+
+    <div id="page-profile" class="page hidden">
+      <div class="panel profile-panel">
+        <div class="panel-head"><div><h3>Tell your mentor about you</h3><p class="muted">One platform, different journeys for school students, college students, graduates and job seekers.</p></div></div>
+        <form id="profileForm" class="form-grid">
+          <label>Current stage<select name="stage" required><option value="">Select</option><option>10th Student</option><option>12th Student</option><option>College Student</option><option>Graduate / Pass-out</option><option>Job Seeker</option></select></label>
+          <label>Class / Year<input name="classYear" placeholder="e.g. 12th / 2nd Year / 2026"></label>
+          <label>Stream / Course<input name="stream" placeholder="e.g. PCM, BBA, B.Tech CSE"></label>
+          <label>School / College<input name="college" placeholder="Institution"></label>
+          <label class="full">Subjects / academic strengths<input name="subjects" placeholder="e.g. Maths, Computer Science, Economics"></label>
+          <label class="full">Interests <span class="hint">comma separated</span><input name="interests" placeholder="coding, design, business, sports, writing"></label>
+          <label class="full">Skills <span class="hint">comma separated</span><input name="skills" placeholder="Java, Canva, communication, Excel"></label>
+          <label class="full">Career goals<input name="goals" placeholder="What would you like to become or explore?"></label>
+          <label>Preferred location<input name="location" placeholder="Delhi NCR / Remote / Anywhere"></label>
+          <label>Preferred mode<select name="preferredMode"><option>Any</option><option>Remote</option><option>Hybrid</option><option>On-site</option></select></label>
+          <label class="full">Experience / achievements<textarea name="experience" rows="3" placeholder="Internships, competitions, certifications, clubs..."></textarea></label>
+          <label class="full">Projects / portfolio<textarea name="projects" rows="3" placeholder="Projects you have built or want to build"></textarea></label>
+          <label class="full">About you<textarea name="bio" rows="3" placeholder="Anything else the mentor should know?"></textarea></label>
+          <div class="full actions"><button type="submit" class="primary">Save & Run AI Analysis ✦</button></div>
+        </form>
+      </div>
+    </div>
+
+    <div id="page-career" class="page hidden">
+      <div class="panel graph-panel"><div class="panel-head"><div><h3>Personalized Career Graph</h3><p class="muted">Your profile → interests → skills → possible career paths.</p></div><button class="ghost" id="reanalyze">↻ Re-analyze</button></div><div id="graph" class="graph"></div></div>
+      <div class="two-col">
+        <div class="panel"><div class="panel-head"><h3>Why these matches?</h3></div><div id="whyList"></div></div>
+        <div class="panel"><div class="panel-head"><h3>Priority skill gaps</h3></div><div id="gaps" class="chips"></div></div>
+      </div>
+    </div>
+
+    <div id="page-roadmap" class="page hidden">
+      <div class="panel"><div class="panel-head"><div><h3>Learn → Build → Practice → Apply → Grow</h3><p class="muted">The loop gets smarter as your profile changes.</p></div></div><div id="roadmap" class="timeline"></div></div>
+    </div>
+
+    
+<div id="page-interview" class="page hidden"><div class="panel"><div class="panel-head"><div><h3>Adaptive AI Interview</h3><p class="muted" id="interviewIntro">Questions adapt to your stage and previous answers.</p></div><button class="primary" style="width:auto" id="startInterview">Start Interview</button></div><div id="interviewBox" class="interview-box hidden"><div class="interview-meta"><span id="qNumber">Question 1</span><span id="qSkill">Skill</span></div><div id="question" class="question"></div><textarea id="answer" rows="5" placeholder="Type your answer here..."></textarea><button class="primary" style="margin-top:12px;width:auto;float:right" id="submitAnswer">Submit Answer →</button><div style="clear:both"></div><div id="feedback" class="feedback hidden"></div><div id="feedbackDetails" class="feedback hidden"></div></div><div id="interviewResult" class="result hidden"></div></div></div>
+<div id="page-resume" class="page hidden"><div class="panel ats-panel"><div class="panel-head"><div><h3>ATS Resume Score</h3><p class="muted">Demo ATS-style score based on role keywords, sections, contact details, formatting and measurable impact.</p></div><div id="atsScore" class="ats-score"><span>—</span><small>/100</small></div></div><div class="ats-meter"><div id="atsFill"></div></div><div id="atsRole" class="muted"></div><div id="atsBreakdown" class="ats-breakdown"></div></div><div class="two-col"><div class="panel"><div class="panel-head"><div><h3>Resume Analyzer</h3><p class="muted">Upload PDF, DOCX or TXT to extract skills and update your profile.</p></div></div><form id="resumeForm"><input id="resumeFile" type="file" accept=".pdf,.docx,.txt" required><button class="primary" style="margin-top:15px">Analyze Resume ✦</button></form><div id="resumeInfo" class="resume-info"></div></div><div class="panel"><div class="panel-head"><h3>Skill Gap Report</h3></div><div id="resumeGaps" class="chips"></div><p id="resumeAdvice" class="muted">Upload your resume to see missing skills and next actions.</p><div id="atsRecommendations" class="ats-recs"></div></div></div></div>
+<div id="page-progress" class="page hidden"><div class="panel"><div class="panel-head"><div><h3>Personalized Study & Career Roadmap</h3><p class="muted">Every weak/missing skill becomes an actionable milestone.</p></div></div><div id="progressRoadmap" class="progress-roadmap"></div></div></div>
+<div id="page-jobs" class="page hidden">
+      <div class="panel"><div class="panel-head"><div><h3>Opportunities matched to you</h3><p class="muted">Demo opportunity feed. Replace this endpoint with a live jobs API when you deploy.</p></div><span class="live">LIVE DEMO</span></div><div id="jobs" class="jobs"></div></div>
+    </div>
+  </main>
+</section>
+<div id="schoolBot" class="chatbot hidden"><div class="chat-head"><span>✦ School Interest Mentor</span><button id="closeBot">×</button></div><div id="chatMessages" class="chat-messages"></div><form id="chatForm"><input id="chatInput" placeholder="Type your answer..."><button>→</button></form></div><button id="openBot" class="chat-fab hidden">✦</button><script src="/app.js"></script>
+</body>
+</html>

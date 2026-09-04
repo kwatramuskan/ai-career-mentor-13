@@ -1,0 +1,493 @@
+[
+  {
+    "id": "9ed85686-fca7-4dc1-bd44-c2e8e3da1df3",
+    "name": "Muskan",
+    "email": "muskankwatra2007@gmail.com",
+    "salt": "6e6c8a32474e58f6866ec8821c2cac31",
+    "hash": "69e1d34b255112bb950ad1f70c7bf4782b7b0405c0293bfe1ef487489786f7f3ae9a124cfa76e216d0a0bb790018c5088a9213fec6180cb075868be255d499f5",
+    "profile": {
+      "stage": "College Student",
+      "classYear": "2 nd year",
+      "stream": "Cse ",
+      "college": "Bharati Vidyapeeth ' s college of enginnering",
+      "subjects": "Programming in C, Java, Data Structures, Web Development, Mathematics",
+      "interests": [
+        "Web development",
+        "software development",
+        "coding",
+        "problem solving",
+        "AI",
+        "hackathons",
+        "technology"
+      ],
+      "skills": [
+        "Java",
+        "C",
+        "HTML",
+        "CSS",
+        "JavaScript basics",
+        "Git/GitHub",
+        "problem solving",
+        "Canva",
+        "presentation",
+        "teamwork",
+        "Programming",
+        "DSA",
+        "Git",
+        "JavaScript",
+        "Problem Solving",
+        "Presentation",
+        "Teamwork"
+      ],
+      "goals": "I want to become a skilled software developer with strong foundations in Data Structures and Algorithms and full-stack web development. My short-term goal is to become strong in Java, DSA and JavaScript, build real-world projects, participate in hackathons and secure a good software development internship. In the long term, I want to work as a software engineer and continuously improve my technical skills.",
+      "bio": "I am a BTech CSE student interested in software development, AI, web development, and problem-solving. I am currently learning DSA in Java and have solved 75+ LeetCode problems. I am also exploring web development and AI through projects and hackathons. I want guidance on choosing the right career path, improving my technical skills, building a strong portfolio, and preparing for internships and placements.",
+      "location": "Delhi NCR / Remote / Anywhere",
+      "experience": "Participated in hackathons and team-based technical projects. Currently practicing Data Structures & Algorithms in Java and have solved 75+ problems on LeetCode. Also exploring web development, AI-based projects, and problem-solving through technical projects and competitions.",
+      "projects": "Worked on frontend/web development projects using HTML, CSS and JavaScript and participated in hackathon-based projects. Currently building AI-based projects and continuously strengthening my problem-solving skills through DSA in Java and LeetCode practice (75+ problems solved).",
+      "preferredMode": "Any"
+    },
+    "analysis": {
+      "top": [
+        {
+          "name": "Software Engineer",
+          "score": 93,
+          "domain": "Technology",
+          "skills": [
+            "Programming",
+            "DSA",
+            "Git",
+            "APIs"
+          ],
+          "tools": [
+            "JavaScript",
+            "Java",
+            "GitHub"
+          ],
+          "projects": [
+            "Portfolio Website",
+            "Task Manager API"
+          ],
+          "salary": "₹4–12 LPA",
+          "matched": [
+            "software",
+            "engineer",
+            "technology",
+            "programming",
+            "dsa"
+          ]
+        },
+        {
+          "name": "Data Analyst",
+          "score": 63,
+          "domain": "Data",
+          "skills": [
+            "Excel",
+            "SQL",
+            "Statistics",
+            "Visualization"
+          ],
+          "tools": [
+            "Python",
+            "SQL",
+            "Power BI"
+          ],
+          "projects": [
+            "Sales Dashboard",
+            "Student Performance Analysis"
+          ],
+          "salary": "₹4–10 LPA",
+          "matched": [
+            "data",
+            "student"
+          ]
+        },
+        {
+          "name": "UI/UX Designer",
+          "score": 57,
+          "domain": "Design",
+          "skills": [
+            "User Research",
+            "Wireframing",
+            "Visual Design",
+            "Prototyping"
+          ],
+          "tools": [
+            "Figma",
+            "Canva",
+            "FigJam"
+          ],
+          "projects": [
+            "Mobile App Redesign",
+            "Design System"
+          ],
+          "salary": "₹3–9 LPA",
+          "matched": [
+            "canva"
+          ]
+        }
+      ],
+      "gaps": [
+        "APIs",
+        "Excel",
+        "SQL",
+        "Statistics",
+        "Visualization",
+        "User Research"
+      ],
+      "roadmap": [
+        {
+          "step": "Discover",
+          "detail": "Validate your strongest interests with mini projects and role research."
+        },
+        {
+          "step": "Learn",
+          "detail": "Build foundations in Programming, DSA, Git."
+        },
+        {
+          "step": "Build",
+          "detail": "Create a portfolio project such as Portfolio Website."
+        },
+        {
+          "step": "Practice",
+          "detail": "Practice Programming, DSA, Git through weekly tasks."
+        },
+        {
+          "step": "Apply",
+          "detail": "Start with internships, competitions, freelance work or entry-level roles."
+        },
+        {
+          "step": "Get Hired",
+          "detail": "Prepare resume, portfolio, interview stories and targeted applications."
+        },
+        {
+          "step": "Update Profile",
+          "detail": "Re-run your analysis whenever your skills, goals or interests change."
+        }
+      ],
+      "graph": {
+        "nodes": [
+          {
+            "id": "you",
+            "label": "YOU",
+            "type": "center"
+          },
+          {
+            "id": "interest",
+            "label": "Web development",
+            "type": "input"
+          },
+          {
+            "id": "skills",
+            "label": "Java",
+            "type": "input"
+          },
+          {
+            "id": "goals",
+            "label": "I want to become a",
+            "type": "input"
+          },
+          {
+            "id": "career0",
+            "label": "Software Engineer",
+            "type": "career",
+            "score": 93
+          },
+          {
+            "id": "career1",
+            "label": "Data Analyst",
+            "type": "career",
+            "score": 63
+          },
+          {
+            "id": "career2",
+            "label": "UI/UX Designer",
+            "type": "career",
+            "score": 57
+          }
+        ],
+        "edges": [
+          [
+            "you",
+            "interest"
+          ],
+          [
+            "you",
+            "skills"
+          ],
+          [
+            "you",
+            "goals"
+          ],
+          [
+            "interest",
+            "career0"
+          ],
+          [
+            "skills",
+            "career0"
+          ],
+          [
+            "goals",
+            "career1"
+          ],
+          [
+            "skills",
+            "career2"
+          ]
+        ]
+      },
+      "generatedAt": "2026-08-30T14:14:33.475Z"
+    },
+    "interview": {
+      "id": "7e5814fa-2082-48dd-8022-5df5f85e98d3",
+      "group": "college",
+      "stage": "College Student",
+      "focus": [
+        "Java",
+        "C",
+        "HTML",
+        "CSS",
+        "JavaScript basics",
+        "Git/GitHub",
+        "problem solving",
+        "Canva",
+        "presentation",
+        "teamwork",
+        "Programming",
+        "DSA",
+        "Git",
+        "JavaScript",
+        "Problem Solving",
+        "Presentation",
+        "Teamwork"
+      ],
+      "questions": [
+        {
+          "skill": "Programming",
+          "q": "Explain a programming problem you solved and the approach you used."
+        },
+        {
+          "skill": "Problem Solving",
+          "q": "When you face an unfamiliar technical problem, how do you approach solving it?"
+        },
+        {
+          "skill": "Communication",
+          "q": "Explain one of your projects to a non-technical person in about 45 seconds."
+        },
+        {
+          "skill": "Teamwork",
+          "q": "Tell me about a disagreement in a team project and how you handled it."
+        },
+        {
+          "skill": "Project Skills",
+          "q": "What was your exact contribution to your best project?"
+        },
+        {
+          "skill": "Learning",
+          "q": "Tell me about a skill you recently learned and how you learned it."
+        }
+      ],
+      "index": 1,
+      "answers": [
+        {
+          "question": {
+            "skill": "Programming",
+            "q": "Explain a programming problem you solved and the approach you used."
+          },
+          "answer": "One programming problem I solved was finding whether a number is a palindrome in Java. I first understood that a palindrome remains the same when its digits are reversed. I used a loop to extract the last digit of the number, build its reverse, and then compared the reversed number with the original number. If both were equal, I considered it a palindrome. This helped me understand loops, arithmetic operations, and how to break a problem into smaller steps.",
+          "evaluation": {
+            "score": 90,
+            "feedback": "Good answer. Add one concrete example to make it stronger.",
+            "weak": false
+          },
+          "at": "2026-08-30T14:18:01.171Z"
+        }
+      ],
+      "weakSkills": [],
+      "startedAt": "2026-08-30T14:15:32.918Z"
+    },
+    "resume": {
+      "name": "Muskan_Dummy_Resume.pdf",
+      "size": 24571,
+      "text": "MUSKAN B.Tech CSE Student | Aspiring Software Developer Delhi NCR, India | +91-XXXXXXXXXX | muskan@example.com LinkedIn: linkedin.com/in/muskan | GitHub: github.com/muskan CAREER OBJECTIVE Motivated B.Tech Computer Science student building strong foundations in Java, Data Structures and Algorithms, and web development. Interested in software development, problem solving, hackathons, and building practical projects. Seeking opportunities to strengthen technical skills through internships, projects, and collaborative development. EDUCATION B.Tech – Computer Science & Engineering2025 – Present Bachelor's Degree / Undergraduate ProgramDelhi NCR, India TECHNICAL SKILLS Languages: Java, C, JavaScript (basic) Web: HTML, CSS, JavaScript fundamentals Core: Arrays, Functions, Loops, Basic DSA, Problem Solving Tools: Git, GitHub, Canva, VS Code PROJECTS Personal Portfolio Website • Built a beginner-friendly personal portfolio using HTML and CSS. • Added sections for profile, skills, projects, and contact information. • Focused on clean structure and responsive presentation. Java Practice & DSA Projects • Implemented programs covering arrays, loops, functions, patterns, and basic problem solving. • Practiced coding problems to improve logical thinking and programming fundamentals. CODEFUSION 2K26 Hackathon Project • Worked as part of a student team on a technology-focused hackathon project. • Cleared the initial PPT screening round and participated in the offline semi-finale. • Collaborated on ideation, development, debugging, and presentation during the hackathon. ACHIEVEMENTS • Selected for the CODEFUSION 2K26 offline semi-finale after the initial PPT screening round. • Participated in a 36-hour national-level hackathon at Echelon Institute of Technology, Faridabad. • Actively practicing Data Structures and Algorithms and building web development projects. CERTIFICATIONS & ACTIVITIES • CODEFUSION 2K26 – Certificate of Participation • Hackathon participation and team-based technical project work • Regular coding practice and self-learning in Java and web development STRENGTHS Problem solving • Teamwork • Willingness to learn • Presentation • Adaptability • Consistency CAREER INTERESTS Software Development • Full-Stack Web Development • Data Structures & Algorithms • Hackathons • Technology & Innovation Note: This is a dummy resume created for AI Career Mentor resume-analysis testing. Replace placeholder contact details and any sample information with your actual details before using it professionally.",
+      "extractedSkills": [
+        "Programming",
+        "DSA",
+        "Git",
+        "JavaScript",
+        "Java",
+        "Problem Solving",
+        "Presentation",
+        "Teamwork"
+      ],
+      "uploadedAt": "2026-08-26T14:29:01.268Z"
+    },
+    "progress": [
+      {
+        "title": "Foundation Check",
+        "status": "current",
+        "detail": "Target: Software Engineer. Start from your current strengths and interests.",
+        "courses": [
+          {
+            "title": "Learn Software Engineer Fundamentals",
+            "provider": "Recommended learning path",
+            "url": "https://www.coursera.org/search?query=Software%20Engineer"
+          }
+        ]
+      },
+      {
+        "title": "Add APIs",
+        "status": "next",
+        "detail": "This skill is weak or missing. Learn the basics → practise → build a small project → test yourself again.",
+        "courses": [
+          {
+            "title": "Learn REST APIs",
+            "provider": "MDN",
+            "url": "https://developer.mozilla.org/en-US/docs/Glossary/REST"
+          },
+          {
+            "title": "Postman API Fundamentals Student Expert",
+            "provider": "Postman",
+            "url": "https://academy.postman.com/path/postman-api-fundamentals-student-expert"
+          }
+        ]
+      },
+      {
+        "title": "Add Excel",
+        "status": "next",
+        "detail": "This skill is weak or missing. Learn the basics → practise → build a small project → test yourself again.",
+        "courses": [
+          {
+            "title": "Learn Excel Fundamentals",
+            "provider": "Recommended learning path",
+            "url": "https://www.coursera.org/search?query=Excel"
+          }
+        ]
+      },
+      {
+        "title": "Add SQL",
+        "status": "next",
+        "detail": "This skill is weak or missing. Learn the basics → practise → build a small project → test yourself again.",
+        "courses": [
+          {
+            "title": "SQL Tutorial",
+            "provider": "W3Schools",
+            "url": "https://www.w3schools.com/sql/"
+          },
+          {
+            "title": "SQL for Data Science",
+            "provider": "Coursera",
+            "url": "https://www.coursera.org/learn/sql-for-data-science"
+          }
+        ]
+      },
+      {
+        "title": "Add Statistics",
+        "status": "next",
+        "detail": "This skill is weak or missing. Learn the basics → practise → build a small project → test yourself again.",
+        "courses": [
+          {
+            "title": "Statistics with Python",
+            "provider": "Coursera",
+            "url": "https://www.coursera.org/specializations/statistics-with-python"
+          }
+        ]
+      },
+      {
+        "title": "Add Visualization",
+        "status": "next",
+        "detail": "This skill is weak or missing. Learn the basics → practise → build a small project → test yourself again.",
+        "courses": [
+          {
+            "title": "Learn Visualization Fundamentals",
+            "provider": "Recommended learning path",
+            "url": "https://www.coursera.org/search?query=Visualization"
+          }
+        ]
+      },
+      {
+        "title": "Build Proof",
+        "status": "next",
+        "detail": "Create Portfolio Website and document what you learned.",
+        "courses": [
+          {
+            "title": "Learn Software Engineer Fundamentals",
+            "provider": "Recommended learning path",
+            "url": "https://www.coursera.org/search?query=Software%20Engineer"
+          }
+        ]
+      },
+      {
+        "title": "Adaptive Interview",
+        "status": "next",
+        "detail": "Repeat the interview. Weak answers automatically trigger deeper questions.",
+        "courses": [
+          {
+            "title": "Problem Solving",
+            "provider": "HackerRank",
+            "url": "https://www.hackerrank.com/domains/algorithms"
+          },
+          {
+            "title": "CS50x – Introduction to Computer Science",
+            "provider": "Harvard / edX",
+            "url": "https://cs50.harvard.edu/x/"
+          }
+        ]
+      },
+      {
+        "title": "Track Progress",
+        "status": "next",
+        "detail": "Update your skills after every milestone and re-run analysis.",
+        "courses": [
+          {
+            "title": "Git Handbook",
+            "provider": "GitHub",
+            "url": "https://guides.github.com/introduction/git-handbook/"
+          },
+          {
+            "title": "Git & GitHub",
+            "provider": "freeCodeCamp",
+            "url": "https://www.freecodecamp.org/news/learn-the-basics-of-git-in-under-10-minutes/"
+          }
+        ]
+      }
+    ],
+    "createdAt": "2026-08-26T09:14:58.625Z",
+    "ats": {
+      "score": 20,
+      "role": "Software Engineer",
+      "matchedKeywords": [],
+      "missingKeywords": [
+        "software engineer",
+        "java",
+        "javascript",
+        "python",
+        "data structures",
+        "algorithms",
+        "problem solving",
+        "git",
+        "github",
+        "sql",
+        "rest api",
+        "html",
+        "css",
+        "project"
+      ],
+      "breakdown": {
+        "keywordMatch": 0,
+        "sections": 0,
+        "contact": 0,
+        "format": 4,
+        "impact": 4,
+        "baseline": 12
+      },
+      "recommendations": [
+        "Add relevant keywords: software engineer, java, javascript, python, data structures.",
+        "Add a concise professional summary targeted to the role.",
+        "Add LinkedIn and GitHub/portfolio links.",
+        "Add measurable results to project or achievement bullets where truthful."
+      ],
+      "disclaimer": "Demo ATS-style estimate. Actual ATS scores vary by employer, job description and parsing system."
+    }
+  }
+]
