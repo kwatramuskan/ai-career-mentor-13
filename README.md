@@ -83,4 +83,4 @@ The "AI" layer is implemented locally as a transparent scoring engine so you can
 
 - Roadmap now recommends 1–2 relevant learning courses/resources for each missing skill and milestone, with clickable links.
 
-Contributor-Muskan Kwatra,Khushi Devi,Nancy
+Contributor-Muskan Kwatra,Khushi Devi,Nancy,Atulyaa Singh
