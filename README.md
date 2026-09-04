@@ -82,3 +82,5 @@ The "AI" layer is implemented locally as a transparent scoring engine so you can
 - AI interview is fully English with score, strengths, improvement feedback, and adaptive weak-skill follow-ups.
 
 - Roadmap now recommends 1–2 relevant learning courses/resources for each missing skill and milestone, with clickable links.
+
+Contributor-Muskan Kwatra,Khushi Devi
